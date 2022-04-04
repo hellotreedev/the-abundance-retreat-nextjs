@@ -224,7 +224,7 @@ export default function About(props) {
                                                                         className="mySwiper2"
                                                                     >
                                                                         {
-                                                                            teamList.map((singleTeam, index) => (
+                                                                            teamList?.map((singleTeam, index) => (
                                                                                 <SwiperSlide key={index} onClick={() => { setTeamPopupTitle(singleTeam.title); setTeamPopupText(singleTeam.description); }}>
                                                                                     <div className="col-auto team-data">
                                                                                         <div className="square-slider">

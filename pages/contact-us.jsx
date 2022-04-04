@@ -132,7 +132,7 @@ export default function ContactUs(props) {
                                 </div>
                                 <div className="col my-auto">
                                     <h4>{contactSettings.email_text}</h4>
-                                    <a target="_blank" href={"mailto:" + contactSettings.email_address}><p className="p-0 m-0">{contactSettings.email_address}</p></a>
+                                    <a target="_blank" rel="noreferrer" href={"mailto:" + contactSettings.email_address}><p className="p-0 m-0">{contactSettings.email_address}</p></a>
                                 </div>
                             </div>
                         </div>

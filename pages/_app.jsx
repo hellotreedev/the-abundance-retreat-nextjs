@@ -95,7 +95,6 @@ function MyApp({ Component, pageProps }) {
             <div></div>
           </div>
         </div>
-        // <p>test</p>
       ) : (
         <Component {...pageProps} />
       )}

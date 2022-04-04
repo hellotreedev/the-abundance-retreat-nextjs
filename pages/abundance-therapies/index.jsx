@@ -86,7 +86,7 @@ export default function AbundanceTherapies(props) {
                     <div className="container py-5">
                         <div className="row">
                             {
-                                productsList.map((productSingle, index) => (
+                                productsList?.map((productSingle, index) => (
                                     <div className="col-12 col-sm-12 col-md-12 col-lg-6 pb-5 d-flex flex-column" key={index}>
                                         <Link href={'/abundance-therapies/' + productSingle.slug}>
                                             <a style={{ textDecoration: 'none' }} animate="down">
@@ -105,7 +105,7 @@ export default function AbundanceTherapies(props) {
                                             </div>
 
                                             {
-                                                productSingle.products_sessions.map((singleList, index) => (
+                                                productSingle?.products_sessions?.map((singleList, index) => (
                                                     <div className="row d-flex justify-content-center pt-4 pt-lg-1" key={index}>
                                                         <div className="col-md-6 col-lg-5 col-xl-6">
                                                             <h4 animate="down">{singleList.title}</h4>
@@ -115,7 +115,7 @@ export default function AbundanceTherapies(props) {
                                                                 <div className="col-auto col-md-6">
                                                                     <div className="row align-items-center no-gutters">
                                                                         <div className="col-auto pr-2">
-                                                                            <img src="/img/time-icon.svg" alt="Time Icon" alt="image" animate="down" width={20} />
+                                                                            <img src="/img/time-icon.svg" alt="Time Icon" animate="down" width={20} />
                                                                         </div>
                                                                         <div className="col" animate="down">
                                                                             <h5>{singleList.time}</h5>

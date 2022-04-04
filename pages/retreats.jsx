@@ -60,7 +60,7 @@ export default function Retreats(props) {
 
                 <div className="all-retreats">
                     {
-                        retreatsSections.map((retreatsSec, index) => (
+                        retreatsSections?.map((retreatsSec, index) => (
                             <div className={"retreats-sections " + (retreatsSec.green_tree && " green-tree-pad") + (retreatsSec.colored_tree && " green-tree-pad")} key={index}>
                                 <div className="container-fluid px-0 py-5">
                                     {retreatsSec.single_leaf ?

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Script from 'next/script';
 
-export default function (props) {
+export default function seo(props) {
     return (
         <Head>
             {/* Primary Meta Tags */}

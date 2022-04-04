@@ -73,7 +73,7 @@ export default function Home(props) {
                           }}
                         >
                           {
-                            homeSwiper.map((swiperItem, index) => (
+                            homeSwiper?.map((swiperItem, index) => (
                               <SwiperSlide key={index}>
                                 <div>
                                   <div className="row no-gutters">

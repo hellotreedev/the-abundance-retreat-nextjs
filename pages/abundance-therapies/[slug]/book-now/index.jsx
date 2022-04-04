@@ -7,7 +7,7 @@ import axios from "axios";
 import GlobalState from '../../../contexts/GlobalState';
 
 
-export default function (props) {
+export default function Main(props) {
 
     const { triggerScroll } = useContext(GlobalState);
     const productsSingle = props.singleTherapiesData.page_items.single_product;
@@ -150,7 +150,7 @@ export default function (props) {
                             <div className="book-now-desc">
                                 <h1>{productsSingle.title}</h1>
                                 <p>{productsSingle.package_text}</p>
-                                {productsSingle.products_sessions.map((singleList, index) => (
+                                {productsSingle?.products_sessions?.map((singleList, index) => (
                                     <div className="row d-flex pt-4 pt-lg-1" key={index}>
                                         <div className="col-md-6 col-lg-5 col-xl-6">
                                             <h6 animate="down">{singleList.title}</h6>
@@ -160,7 +160,7 @@ export default function (props) {
                                                 <div className="col-auto col-md-6">
                                                     <div className="row align-items-center no-gutters">
                                                         <div className="col-auto pr-2">
-                                                            <img src="/img/time-icon.svg" alt="Time Icon" alt="image" animate="down" width={20} />
+                                                            <img src="/img/time-icon.svg" alt="Time Icon" animate="down" width={20} />
                                                         </div>
                                                         <div className="col" animate="down">
                                                             <h5>{singleList.time}</h5>
@@ -184,7 +184,7 @@ export default function (props) {
                                 }
                                 <hr />
                                 <h2>{therapiesSettings.order_total_text}<span> {productsSingle.product_total}</span></h2>
-                                <h4 className="pt-3">{therapiesSettings.whatsapp_text} <a target="_blank" href={"https://wa.me/" + therapiesSettings.whatsapp_number + "?text=" + therapiesSettings.whatsapp_message + " " + slug + ""}><img src="/img/whatsapp.png" /></a></h4>
+                                <h4 className="pt-3">{therapiesSettings.whatsapp_text} <a target="_blank" rel="noreferrer" href={"https://wa.me/" + therapiesSettings.whatsapp_number + "?text=" + therapiesSettings.whatsapp_message + " " + slug + ""}><img src="/img/whatsapp.png" /></a></h4>
                             </div>
                         </div>
                     </div>
@@ -197,7 +197,7 @@ export default function (props) {
 
 export async function getStaticPaths() {
     let therapies = await axios.get("/abundance-therapies");
-    const paths = therapies.data.page_items.all_products_list.map((therapy) => ({
+    const paths = therapies?.data?.page_items?.all_products_list?.map((therapy) => ({
         params: { slug: therapy.slug },
     }));
     return { paths, fallback: false };
