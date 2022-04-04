@@ -113,7 +113,7 @@ body {
     position: absolute;
     bottom: -10px;
     right: -20px;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     font-size: 90px;
     color: #00D0AC;
 }
@@ -258,7 +258,7 @@ body.loaded .fadein {
     position: relative;
     font-size: 205px;
     top: 20%;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     color: #2B2B2B;
     line-height: 0.8;
 }
@@ -377,7 +377,7 @@ body.loaded .fadein {
 .header-banner-image-text h1 {
     font-size: 140px;
     color: white;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,7 +504,7 @@ h1.big-h1-und:after {
 
 
 .news-letter h2 {
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     color: white;
     font-size: 40px;
     line-height: 1;
@@ -622,7 +622,7 @@ textarea {
         padding-left: 1em;
         font-size: 57px;
         color: #00D0AC;
-        font-family: "Golden Plains - Demo";
+        font-family: "Golden Plains - Demo", sans-serif;
     }
 
     .book-button {
@@ -684,7 +684,7 @@ textarea {
         position: absolute;
         bottom: -10px;
         right: -20px;
-        font-family: "Golden Plains - Demo";
+        font-family: "Golden Plains - Demo", sans-serif;
         color: #00D0AC;
     }
 
@@ -754,7 +754,7 @@ textarea {
         padding-left: 0.5em !important;
         font-size: 40px;
         color: #00D0AC;
-        font-family: "Golden Plains - Demo";
+        font-family: "Golden Plains - Demo", sans-serif;
     }
 
     .last-home-div-desc h3 {
@@ -1067,7 +1067,7 @@ textarea {
         position: relative;
         margin-top: 0;
         margin-left: 0;
-        font-family: "Golden Plains - Demo";
+        font-family: "Golden Plains - Demo", sans-serif;
         font-size: 90px;
         color: #00D0AC;
     }
@@ -1765,7 +1765,7 @@ textarea {
     color: white;
     transform: translate(-50%, -50%);
     font-size: 70px;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
 }
 
 .retreats-box {
@@ -1817,7 +1817,7 @@ textarea {
 
 .about-banner h1 {
     color: white;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     font-size: 160px;
     margin: auto;
     padding-top: 0.3em;
@@ -2012,7 +2012,7 @@ textarea {
 }
 
 .single-description h1 {
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     font-size: 70px;
     color: #00D0AC;
 }
@@ -2031,7 +2031,7 @@ textarea {
 
 .single-package-desc h1 {
     padding-top: 1em;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     font-size: 70px;
     color: #00D0AC;
 }
@@ -2094,7 +2094,7 @@ textarea {
     line-height: 0.5;
     padding-bottom: 0.6em;
     font-size: 90px;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     color: white;
 }
 
@@ -2122,7 +2122,7 @@ textarea {
 .days-section h2 {
     font-size: 110px;
     color: #00D0AC;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     line-height: 115px;
 }
 
@@ -2489,7 +2489,7 @@ button:focus {
 
 .subak-desc h1 {
     font-size: 90px;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     color: #00D0AC;
     word-spacing: 100vw;
 }
@@ -2689,7 +2689,7 @@ a.button-full-line-white svg {
 
 .book-now-desc h1 {
     font-size: 70px;
-    font-family: "Golden Plains - Demo";
+    font-family: "Golden Plains - Demo", sans-serif;
     color: #00D0AC;
 }
 
