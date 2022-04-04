@@ -53,7 +53,7 @@
 }
 
 @font-face {
-    font-family: 'Golden Plains - Demo';
+    font-family: "Golden Plains - Demo";
     src: url('GoldenPlains.woff2') format('woff2'),
         url('GoldenPlains.woff') format('woff');
     font-weight: normal;
