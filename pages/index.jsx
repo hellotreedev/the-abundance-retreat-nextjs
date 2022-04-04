@@ -2,14 +2,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import Router from 'next/router';
-import GlobalState from './contexts/GlobalState';
+import GlobalState from '../components/layouts/GlobalState';
 import { useEffect, useState, useContext } from "react";
 import global from '../global';
 import axios from 'axios';
 import SwiperCore, { Pagination, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Layout from './layouts/layout';
-import Seo from './layouts/seo';
+import Layout from '../components/layouts/layout';
+import Seo from '../components/layouts/seo';
 import Link from "next/link";
 
 import "swiper/components/effect-fade/effect-fade.min.css";

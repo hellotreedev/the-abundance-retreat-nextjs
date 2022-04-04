@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react";
-import Layout from '../layouts/layout';
 import axios from "axios";
-import GlobalState from '../contexts/GlobalState';
+import GlobalState from '../../components/layouts/GlobalState';
 import Link from "next/link";
-import Seo from '../layouts/seo';
+import Layout from '../../components/layouts/layout';
+import Seo from '../../components/layouts/seo';
 
 
 export default function AbundanceTherapies(props) {

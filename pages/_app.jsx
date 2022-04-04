@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import { useEffect, useState } from "react";
 import Router from 'next/router';
-import GlobalState from "./contexts/GlobalState";
+import GlobalState from "../components/layouts/GlobalState";
 import axios from 'axios';
 import "../styles/bootstrap.min.css";
 import "../styles/style.css";
@@ -81,23 +81,20 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <GlobalState.Provider
-      value={{
-        triggerScroll,
-      }}
-    >
-      {loading ? (
-        <div className='loader-forms'>
-          <div className="home-loader lds-ring">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <GlobalState.Provider value={{ triggerScroll, }}>
+      {
+        loading ? (
+          <div className='loader-forms'>
+            <div className="home-loader lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
           </div>
-        </div>
-      ) : (
-        <Component {...pageProps} />
-      )}
+        ) : (
+          <Component {...pageProps} />
+        )} 
     </GlobalState.Provider>
   );
 }

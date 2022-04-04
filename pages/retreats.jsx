@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react";
-import Layout from './layouts/layout';
 import axios from "axios";
-import GlobalState from './contexts/GlobalState';
-import Seo from './layouts/seo';
+import GlobalState from '../components/layouts/GlobalState';
+import Layout from '../components/layouts/layout';
+import Seo from '../components/layouts/seo';
 
 
 export default function Retreats(props) {

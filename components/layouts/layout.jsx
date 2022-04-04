@@ -1,4 +1,4 @@
-import GlobalState from '../contexts/GlobalState';
+import GlobalState from './GlobalState';
 import { useEffect, useState, useContext } from "react";
 import Link from 'next/link';
 

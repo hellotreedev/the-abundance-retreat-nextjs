@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useContext } from 'react';
-import Layout from '../../../layouts/layout';
-import Seo from '../../../layouts/seo';
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import axios from "axios";
-import GlobalState from '../../../contexts/GlobalState';
+import GlobalState from '../../../../components/layouts/GlobalState';
+import Layout from '../../../../components/layouts/layout';
+import Seo from '../../../../components/layouts/seo';
 
 
 export default function Main(props) {
