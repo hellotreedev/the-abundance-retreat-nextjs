@@ -7,7 +7,7 @@ import "../styles/bootstrap.min.css";
 import "../styles/style.css";
 
 // axios.defaults.baseURL = 'https://tar-backend.hellotree.dev/api';
-axios.defaults.baseURL = 'https://theabundanceretreat.com/api';
+axios.defaults.baseURL = 'https://admin.theabundanceretreat.com/api';
 
 
 function MyApp({ Component, pageProps }) {
