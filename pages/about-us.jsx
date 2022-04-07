@@ -225,7 +225,7 @@ export default function About(props) {
                                                                     >
                                                                         {
                                                                             teamList?.map((singleTeam, index) => (
-                                                                                <SwiperSlide key={index} onClick={() => { setTeamPopupTitle(singleTeam.title); setTeamPopupText(singleTeam.description); }}>
+                                                                                <SwiperSlide className="cursor-pointer" key={index} onClick={() => { setTeamPopupTitle(singleTeam.title); setTeamPopupText(singleTeam.description); }}>
                                                                                     <div className="col-auto team-data">
                                                                                         <div className="square-slider">
                                                                                             <img className="team-img" src={singleTeam.image} alt="Team Member" />

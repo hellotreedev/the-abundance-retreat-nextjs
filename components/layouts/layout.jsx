@@ -167,7 +167,7 @@ export default function Main(props) {
                     </div>
 
                     <div className="copyright position-relative">
-                        <h5 className="copy-r">Copyright The Abundance Retreat © 2021  - All rights reserved</h5>
+                        <h5 className="copy-r">Copyright The Abundance Retreat © 2022  - All rights reserved</h5>
                         <img className="footer-black-bg" src="/img/footer-bg-black.png" alt="image9" />
                         <img className="footer-img" src="/img/footer-tree.png" alt="image10" />
                     </div>

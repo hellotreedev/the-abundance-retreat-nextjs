@@ -1987,7 +1987,9 @@ textarea {
 .mb-product-section h6 span {
     position: relative;
     font-size: 14px;
-    font-family: 'Montserrat-Bold';
+    /* font-family: 'Montserrat-Bold'; */
+    font-family: 'Montserrat';
+    font-weight: bold;
     padding-top: 2em;
 }
 
@@ -2382,6 +2384,10 @@ button:focus {
 .burger-button {
     z-index: 9999999;
     cursor: pointer;
+}
+
+.cursor-pointer{
+    cursor: pointer !important;
 }
 
 .nav-icon1 {
@@ -2872,7 +2878,9 @@ button.load-more svg {
 }
 
 .team-data h2 {
-    font-family: 'Montserrat-Bold' !important;
+    /* font-family: 'Montserrat-Bold' !important; */
+    font-family: 'Montserrat' !important;;
+    font-weight: bold;
     font-size: 23px !important;
     padding-top: 1em;
 }
