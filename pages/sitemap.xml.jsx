@@ -7,9 +7,8 @@ const Sitemap = () => {
 };
 
 export const getServerSideProps = async ({ res }) => {
-    const BASE_URL = 'https://the-abundance-retreat.vercel.app/';
+    const BASE_URL = 'https://theabundanceretreat.com/';
 
-    const products = await axios.get("/abundance-therapies");
     const staticPaths = fs
         .readdirSync("pages")
         .filter((staticPage) => {
@@ -25,9 +24,10 @@ export const getServerSideProps = async ({ res }) => {
         .map((staticPagePath) => {
             return `${BASE_URL}/${staticPagePath}`;
         });
-    
-    const homePath= `${BASE_URL}`;
 
+    const homePath = `${BASE_URL}`;
+
+    const products = await axios.get("/abundance-therapies");
     const dynamicPaths = products.data.page_items.all_products_list.map(singleProduct => {
         return `${BASE_URL}/abundance-therapies/${singleProduct.slug}`
     })
@@ -36,7 +36,7 @@ export const getServerSideProps = async ({ res }) => {
         return `${BASE_URL}/abundance-therapies/${singleProduct.slug}/book-now`
     })
 
-    const allPaths = [ homePath , ...staticPaths, ...dynamicPaths, ...dynamicPaths2];
+    const allPaths = [homePath, ...staticPaths, ...dynamicPaths, ...dynamicPaths2];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
