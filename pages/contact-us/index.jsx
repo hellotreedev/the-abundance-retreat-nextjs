@@ -1,8 +1,8 @@
 import React, { useState, useContext } from 'react';
 import axios from 'axios';
-import GlobalState from '../components/layouts/GlobalState';
-import Layout from '../components/layouts/layout';
-import Seo from '../components/layouts/seo';
+import GlobalState from '../../components/layouts/GlobalState';
+import Layout from '../../components/layouts/layout';
+import Seo from '../../components/layouts/seo';
 
 export default function ContactUs(props) {
 

@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import dynamic from 'next/dynamic';
 import axios from "axios";
-import GlobalState from '../components/layouts/GlobalState';
+import GlobalState from '../../components/layouts/GlobalState';
 import SwiperCore, { Pagination, Autoplay, EffectFade } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Layout from '../components/layouts/layout';
-import Seo from '../components/layouts/seo';
+import Layout from '../../components/layouts/layout';
+import Seo from '../../components/layouts/seo';
 
 
 import "swiper/components/effect-fade/effect-fade.min.css";
