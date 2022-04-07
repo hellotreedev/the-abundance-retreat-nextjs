@@ -7,7 +7,7 @@ const Sitemap = () => {
 };
 
 export const getServerSideProps = async ({ res }) => {
-    const BASE_URL = 'http://localhost:3000';
+    const BASE_URL = 'https://the-abundance-retreat.vercel.app/';
 
     const products = await axios.get("/abundance-therapies");
     const staticPaths = fs
