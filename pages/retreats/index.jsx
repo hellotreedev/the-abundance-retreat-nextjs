@@ -108,5 +108,6 @@ export async function getStaticProps() {
         props: {
             retreatsData: retreatsData.data,
         },
+        revalidate: 10, // In seconds
     };
 }

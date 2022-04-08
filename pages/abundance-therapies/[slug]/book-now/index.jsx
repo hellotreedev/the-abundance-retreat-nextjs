@@ -210,5 +210,6 @@ export async function getStaticProps(params) {
         props: {
             singleTherapiesData: singleTherapiesData.data,
         },
+        revalidate: 10, // In seconds
     };
 }

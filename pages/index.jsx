@@ -296,5 +296,6 @@ export async function getStaticProps() {
     props: {
       homeData: homeData.data,
     },
+    revalidate: 10, // In seconds
   };
 }

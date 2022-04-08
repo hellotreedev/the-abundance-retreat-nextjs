@@ -185,5 +185,6 @@ export async function getStaticProps() {
         props: {
             abundanceTherapiesData: abundanceTherapiesData.data,
         },
+        revalidate: 10, // In seconds
     };
 }
