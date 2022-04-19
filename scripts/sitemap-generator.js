@@ -6,7 +6,7 @@ function addPage(page) {
   const path = page.replace('pages', '').replace('.jsx', '').replace('.mdx', '')
   const route = path === '/index' ? '' : path
   return `  <url>
-    <loc>${`https://theabundanceretreat.com/${route}`}</loc>
+    <loc>${`https://www.theabundanceretreat.com/${route}`}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
