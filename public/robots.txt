@@ -1,5 +1,5 @@
 User-agent: *
-Disallow:
+Disallow: 
 Disallow: /_next/
 Disallow: /img/
 Sitemap: https://www.theabundanceretreat.com/sitemap.xml
