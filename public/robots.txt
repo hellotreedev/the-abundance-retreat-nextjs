@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+Disallow: /_next/
+Disallow: /img/
+Sitemap: https://www.theabundanceretreat.com/sitemap.xml
